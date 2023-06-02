@@ -57,7 +57,7 @@
       <section class="main-title">
         <div class="container conteiner-button">
           <h1 class="main-title-text">Effective Solutions for Your Business</h1>
-          <button class="button-main link" type="button">Order Service</button>
+          <button class="button-main link" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- SECTION MAIN ABOUT -->
@@ -496,5 +496,15 @@
         </div>
       </div>
     </footer>
+     <div class="window is-hidden " data-modal>
+      <div class="modal-window">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg width="8" height="8" class="modal-close-button-icon">
+            <use href="./images/icons.svg#icon-modal-bg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

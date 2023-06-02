@@ -59,6 +59,8 @@ footer-logo  */
   --button-color: #e7e9fc;
   --customers-color: #8e8f99;
   --footer-green-color: #31D0AA;
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:link {
@@ -644,7 +646,7 @@ img {
 
 }
 
-.customers-link{
+.customers-link {
   width: 100%;
   height: 100%;
 }
@@ -807,6 +809,8 @@ img {
   display: block;
 }
 
+/* ---- */
+
 .image-link {
   display: block;
 }
@@ -816,6 +820,37 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.images-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: var(--text-iris-color);
+  padding: 40px 32px;
+  width: 100%;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+  position: absolute;
+  overflow-y: scroll;
+  transform: translate(0, 100%);
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+
+.images :hover .overlay {
+  transform: translate(0, 0);
+}
+
+.images :focus .overlay {
+  transform: translate(0, 0);
+}
 
 /* ------Footer */
 .foot {
@@ -1032,4 +1067,67 @@ img {
 
 .foot-par {
   max-width: 264px;
+}
+
+/* Window */
+.window {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  z-index: 100;
+  transition: opacity var(--transition-duration) var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function);
+}
+
+.window.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--transition-timing-function),
+    border var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: var(--text-ocean-color);
+  fill: var(--background-color);
+  border: none;
+}
+
+.modal-close-button-icon {
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
