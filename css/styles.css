@@ -146,6 +146,7 @@ img {
 .top-conteiner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
 }
 
@@ -184,6 +185,7 @@ img {
 .main-logo {
   margin-right: 76px;
   padding: 24px 0;
+  color: #404BBF;
 
 }
 
@@ -262,9 +264,13 @@ img {
   position: relative;
 }
 
-.top-studio.current {
-  color: #404BBF;
+
+
+.top-studio:not(:last-child) {
+  margin-right: 40px;
 }
+
+
 
 .top-studio.test::after {
   content: "";
@@ -274,6 +280,23 @@ img {
   left: 0;
   bottom: -1px;
   background-color: #404bbf;
+  border-radius: 2px;
+  
+}
+
+
+.top-studio.test {
+  color: var(--text-ocean-color);
+}
+
+.menu-link.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -1px;
+  background-color: var(--accent-color);
   border-radius: 2px;
 }
 
