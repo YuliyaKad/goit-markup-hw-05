@@ -890,13 +890,14 @@ img {
   transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
-.images :hover .overlay {
+.images :hover .overlay,
+.images :focus .overlay{
   transform: translate(0, 0);
 }
 
-.images :focus .overlay {
-transform: translateY(0%);
-}
+/* .images :focus .overlay {
+transform: translate(0, 0);
+} */
 
 /* ------Footer */
 .foot {
