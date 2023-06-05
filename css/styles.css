@@ -255,6 +255,7 @@ img {
   color: #2E2F42;
   transition: color var(--transition-duration) var(--transition-timing-function);
   position: relative;
+ 
 }
 
 
@@ -267,6 +268,7 @@ img {
   bottom: -1px;
   background-color: var(--text-ocean-color);
   border-radius: 2px;
+  color: #404bbf;
 
 
 
@@ -890,11 +892,11 @@ img {
 }
 
 .images.image-link :hover .overlay {
-  transform: translate(0, 0);
+  transform: translateY(0%);
 }
 
 .images.image-link :focus .overlay {
-  transform: translate(0, 0);
+  transform: translateY(0%);
 }
 
 
