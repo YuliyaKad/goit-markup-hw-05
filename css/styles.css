@@ -196,7 +196,7 @@ img {
   font-style: normal;
   align-items: center;
   margin-left: auto;
-  padding: 24px 0;
+  /* padding: 24px 0; */
   display: flex;
 
 }
