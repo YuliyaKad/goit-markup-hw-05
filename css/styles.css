@@ -887,16 +887,17 @@ img {
   top: 0;
   position: absolute;
   overflow-y: scroll;
-  transform: translateY(0%);
+  
+    transform: translate(0, 100%);
   transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
 .images.image-link :hover .overlay {
-  transform: translateY(0%);
+    transform: translate(0, 100%);
 }
 
 .images.image-link :focus .overlay {
-  transform: translateY(0%);
+    transform: translate(0, 100%);
 }
 
 
