@@ -894,11 +894,11 @@ img {
   transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
-.images.overlay:hover {
+.images:hover .overlay {
   transform: translate(0, 0);
 }
 
-.images.overlay:focus {
+.images:focus .overlay {
   transform: translate(0, 0);
 }
 
