@@ -255,6 +255,11 @@ img {
   color: #2E2F42;
   transition: color var(--transition-duration) var(--transition-timing-function);
   position: relative;
+
+}
+
+.top-studio.current {
+  color: #404bbf;
 }
 
 
@@ -267,7 +272,7 @@ img {
   bottom: -1px;
   background-color: var(--text-ocean-color);
   border-radius: 2px;
- color: #404BBF;
+  color: #404BBF;
 
 
 }
@@ -614,8 +619,8 @@ img {
   background-color: var(--text-iris-color);
   align-items: center;
   justify-content: center;
-  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .team-soc-link:hover,
@@ -889,11 +894,11 @@ img {
   transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
-.images :hover .overlay{
-    transform: translate(0, 0);
-  }
+.images :hover .overlay {
+  transform: translate(0, 0);
+}
 
-.images :focus .overlay{
+.images :focus .overlay {
   transform: translate(0, 0);
 }
 
@@ -924,7 +929,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4D5AE5;
-  
+
   margin-bottom: 16px;
 
 
@@ -975,7 +980,7 @@ img {
 }
 
 .foot-par {
-  
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -1037,7 +1042,7 @@ img {
 }
 
 .main-description-footer {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 
