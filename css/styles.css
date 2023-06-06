@@ -659,10 +659,10 @@ img {
   border-color: var(--text-ocean-color);
 }
 
-.customers-item:focus,
+/* .customers-item:focus,
 .customers-item:hover .customers-icons {
   fill: var(--text-ocean-color);
-}
+} */
 
 .customers-list {
   display: flex;
