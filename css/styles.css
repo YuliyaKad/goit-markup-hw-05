@@ -901,7 +901,7 @@ img {
 
 .images :focus .overlay {
   transform: translate(0, 0);
-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 
