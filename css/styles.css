@@ -894,7 +894,12 @@ img {
   transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
-.images :hover .overlay {
+.image-link:hover .overlay,
+.image-link:focus .overlay {
+  transform: translateY(0%);
+}
+
+/* .images :hover .overlay {
   transform: translate(0, 0);
   transform: translateY(0%);
 }
@@ -903,7 +908,7 @@ img {
   transform: translate(0, 0);
   transform: translateY(0%);
 }
-
+ */
 
 
 
