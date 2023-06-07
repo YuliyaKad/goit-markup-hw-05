@@ -928,7 +928,7 @@ img {
   transform: translateY(0%);
 }
 
-/* .images :hover .overlay {
+.images :hover .overlay {
   transform: translate(0, 0);
   transform: translateY(0%);
 }
@@ -937,7 +937,7 @@ img {
   transform: translate(0, 0);
   transform: translateY(0%);
 }
- */
+
 
 
 
